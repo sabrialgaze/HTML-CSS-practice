@@ -54,7 +54,7 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    text-align: center;
+    column-gap: 3em;
 }
     
 .container h1 {
@@ -157,7 +157,6 @@ form > div {
 
 form input[type="submit"] {
     background-color: rgb(218, 75, 75);
-    margin: 3em auto 5em auto;
     font-size: 1.2em;
     border: none;
 }
@@ -180,4 +179,17 @@ form > label[for="message"]{
     display: block;
     margin-top: 2em;
     font-weight: 600;
+}
+
+/* FOOTER */
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 3em;
+}
+
+.png {
+    width: 3em;
 }
