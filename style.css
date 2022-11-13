@@ -61,7 +61,7 @@ footer {
 nav ul { list-style-type: none; }
 
 .container {
-    background: url("/images/banner-michael.jpeg") top left/cover no-repeat;
+    background: url("/images/banner-michael.jpeg") top center/cover;
     height: 300px;
     display: flex;
     justify-content: center;
@@ -69,6 +69,8 @@ nav ul { list-style-type: none; }
     flex-direction: column;
     padding-top: 6em;
     padding-bottom: 2em;
+    background-repeat: no-repeat;
+    background-size: 40em;
 }
     
 .container h1 {
@@ -76,7 +78,7 @@ nav ul { list-style-type: none; }
     font-size: 50px;
     color: whitesmoke;
     text-shadow: 2px 2px #141414;
-    text-align: justify
+    text-align: center
 }
 
 /* MAIN */
@@ -216,3 +218,11 @@ form > label[for="write_to_me"]{
     }   
 }
 
+@media screen and (min-width: 768px) {
+    .navbar .menu .link:hover {
+        transition: color 0.3s linear;
+    }
+    .navbar .menu .link:hover {
+        color: rgb(200, 200, 200);
+    }
+}
