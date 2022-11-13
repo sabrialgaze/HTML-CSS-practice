@@ -31,11 +31,10 @@ footer {
 
 /* HEADER */
 
-.navbar{
+.navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    text-align: center;
     padding: 1em 0.5em;
 }
     
@@ -47,11 +46,11 @@ footer {
     display: none
 }
 
-.navbar .menu .link{
+.navbar .menu .link {
     margin: 0px 10px
 }
 
-.link{
+.link {
     font-family: Helvetica, Arial, sans-serif;
     text-decoration: none;
     font-size: 1em; 
@@ -61,11 +60,15 @@ footer {
 
 nav ul { list-style-type: none; }
 
-.container{
+.container {
+    background: url("/images/banner-michael.jpeg") top left/cover no-repeat;
+    height: 300px;
     display: flex;
     justify-content: center;
     align-items: center;
-    column-gap: 3em;
+    flex-direction: column;
+    padding-top: 6em;
+    padding-bottom: 2em;
 }
     
 .container h1 {
@@ -73,7 +76,7 @@ nav ul { list-style-type: none; }
     font-size: 50px;
     color: whitesmoke;
     text-shadow: 2px 2px #141414;
-    text-align: start; 
+    text-align: justify
 }
 
 /* MAIN */
@@ -186,10 +189,10 @@ form > #message {
     box-sizing: border-box;
 }
 
-form > label[for="message"]{
+form > label[for="write_to_me"]{
     display: block;
     margin-top: 2em;
-    font-weight: 600;
+    font-weight: 900;
 }
 
 /* FOOTER */
