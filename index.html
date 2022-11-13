@@ -70,39 +70,50 @@
         <section>
             <h3>Would you like to work at Dunder Mifflin?</h3>
         </section>
+
         <form action="#" method="post">
-            <div>
-                <label for="name">Name</label>
-                <input required id="name" name="name" type="text" placeholder="Add your name">
-            </div>
-            <div>
-                <label for="last_name">Last name</label>
-                <input required id="last_name" name="last_name" type="text" placeholder="Add your last name">
-            </div>
-            <div>
-                <label for="git_hub">Github username</label>
-                <input id="git_hub" name="git_hub" type="text" placeholder="@<username>" pattern="^@[^\s]+">
+
+            <div class="form_container">
+                <span>
+                    <label for="name">Name</label>
+                    <input required id="name" name="name" type="text" placeholder="Add your name">
+                </span>
+                <span>
+                    <label for="last_name">Last name</label>
+                    <input required id="last_name" name="last_name" type="text" placeholder="Add your last name">
+                </span>
+                <span>
+                    <label for="phone">Phone: </label>
+                    <input required id="phone" name="phone" type="number" placeholder="Phone number" pattern="[0-9]">
+                </span>
+                <span>
+                    <label for="git_hub">Github username</label>
+                    <input id="git_hub" name="git_hub" type="text" placeholder="@<username>" pattern="^@[^\s]+">
+                </span>
             </div>
             <p>How did you meet me?</p>
-            <div>
-                <input required id="school" type="radio" name="meet" value="school">
-                <label for="school">Scranton High School</label>
-            </div>
-            <div>
-                <input required  id="improv" type="radio" name="meet" value="improv">
-                <label for="improv">Improv Classes</label>
-            </div>
-            <div>
-                <input required id="social_media" type="radio" name="meet" value="social_media">
-                <label for="social_media">Social Media</label>
-            </div>
-            <div>
-                <input required id="street" type="radio" name="meet" value="street">
-                <label for="street">Street</label>
-            </div>
+                <div>
+                    <input required id="school" type="radio" name="meet" value="school">
+                    <label for="school">Scranton High School</label>
+                </div>
+                <div>
+                    <input required  id="improv" type="radio" name="meet" value="improv">
+                    <label for="improv">Improv Classes</label>
+                </div>
+                <div>
+                    <input required id="social_media" type="radio" name="meet" value="social_media">
+                    <label for="social_media">Social Media</label>
+                </div>
+                <div>
+                    <input required id="street" type="radio" name="meet" value="street">
+                    <label for="street">Street</label>
+                </div>
+
             <label for="write_to_me">Write to me</label>
             <textarea id="message" name="message" maxlength="300" placeholder="Type your message here (max. 180 characters)"></textarea>
+
             <input type="submit" name="submit" value="Submit">
+
         </form>
     </main>
 

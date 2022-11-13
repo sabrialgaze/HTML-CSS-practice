@@ -1,6 +1,8 @@
 
 /* MOBILE FIRST */
 
+/* GENERAL SETTINGS */
+
 h2 {
     font-size: 24px;
 }
@@ -27,7 +29,7 @@ footer {
     margin-bottom: 0;
 }
 
-/* header */
+/* HEADER */
 
 .navbar{
     display: flex;
@@ -48,7 +50,6 @@ footer {
     text-decoration: none;
 }
 
-
 .container{
     display: flex;
     justify-content: center;
@@ -56,8 +57,6 @@ footer {
     text-align: center;
 }
     
-    
-
 .container h1 {
     font-family: 'Courier New', Courier, monospace;
     font-size: 50px;
@@ -66,7 +65,9 @@ footer {
     text-align: start; 
 }
 
-/* main */
+/* MAIN */
+
+/* skills */
 
 .skill {
     border: 1px solid rgb(61, 61, 61);
@@ -117,3 +118,66 @@ footer {
     100% { width: 70%; }
 }
 
+/* form */
+
+form > p {
+    font-weight: 600;
+}
+
+form input:not([type="radio"]) {
+    border-radius: 10px;
+    border: 1px solid rgb(155, 155, 155);
+    padding: 0.5em;
+    margin: 1em auto 1em auto;
+    box-sizing: border-box;
+    font-size: 18px;
+}
+
+.form_container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.form_container > span {
+    display: flex;
+    flex-direction: column;
+}
+
+.form_container > span > label {
+    display: block;
+}
+
+form > div {
+    display: flex;
+    align-items: center;
+    column-gap: 1em;
+    margin: 1em auto;
+}
+
+form input[type="submit"] {
+    background-color: rgb(218, 75, 75);
+    margin: 3em auto 5em auto;
+    font-size: 1.2em;
+    border: none;
+}
+
+form > #message {
+    width: 100%;
+    max-width: 100%;
+    min-height: 5em;
+    max-height: 15em;
+    margin: 1em auto 1em auto;
+    border-radius: 10px;
+    border: 1px solid rgb(156, 156, 156);
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 18px;
+    padding: 0.5em;
+    box-sizing: border-box;
+}
+
+form > label[for="message"]{
+    display: block;
+    margin-top: 2em;
+    font-weight: 600;
+}
