@@ -35,6 +35,7 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    text-align: center;
     padding: 1em 0.5em;
 }
     
@@ -46,9 +47,19 @@ footer {
     display: none
 }
 
-.link{
-    text-decoration: none;
+.navbar .menu .link{
+    margin: 0px 10px
 }
+
+.link{
+    font-family: Helvetica, Arial, sans-serif;
+    text-decoration: none;
+    font-size: 1em; 
+    color: black;  
+    justify-content: end;
+}
+
+nav ul { list-style-type: none; }
 
 .container{
     display: flex;
@@ -193,3 +204,12 @@ form > label[for="message"]{
 .png {
     width: 3em;
 }
+
+/* RESPONSIVE SETTINGS */
+
+@media screen and (min-width: 768px) {
+    .navbar .menu {
+        display: flex
+    }   
+}
+
